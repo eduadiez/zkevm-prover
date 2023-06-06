@@ -18,3 +18,7 @@ jobs:
         submodules: 'true'
     - name: make
       run: make -j
+    - name: remove all config 
+      run: rm -rf config
+    - name: link files
+      run: ln -s /home/edu/v1.1.0-rc.1-fork.4/config/ config
